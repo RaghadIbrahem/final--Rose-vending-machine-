@@ -75,7 +75,8 @@
 <h2>Extra Links</h2>
 
 <p>
-- [Presentation Slides](https://prezi.com/view/jyWtuInLZKlUXgTYnRRG/): Get an in-depth look at our project.<br>
+- [Presentation Slides](https://prezi.com/view/jyWtuInLZKlUXgTYnRRG/)<br>
+- [Backend Project Rebo](https://github.com/RaghadIbrahem/Ironhack-Project1-Rose-vending-machine-).
 </p>
 
 <h2>The Future Work</h2>
