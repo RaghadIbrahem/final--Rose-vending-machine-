@@ -1,0 +1,19 @@
+<div *ngIf="giftAccessory; else loadingOrError" class="gift-accessory-details-container">
+  <p>Gift Accessory</p>
+  <img *ngIf="giftAccessory?.gift_img_url" [src]="giftAccessory?.gift_img_url" alt="Gift Image">
+  <p>GID: {{ giftAccessory?.id}}</p>
+  <p>Color: {{ giftAccessory?.color}}</p>
+  <p>Price: {{ giftAccessory?.price}}</p>
+  <p>Quantity: {{ giftAccessory?.quantity}}</p>
+  <p>Size: {{ giftAccessory?.size}}</p>
+  <p>Gift Accessory Type: {{ giftAccessory?.giftAccessoryType}}</p>
+</div>
+
+<ng-template #loadingOrError>
+  <div *ngIf="errorLoadingGiftAccessory" class="loading-error-container">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <div *ngIf="!giftAccessory && !errorLoadingGiftAccessory" class="loading-error-container">
+    <p>Loading...</p>
+  </div>
+</ng-template>

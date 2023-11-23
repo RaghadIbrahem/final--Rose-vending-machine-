@@ -1,0 +1,43 @@
+/* gift-accessory-details.component.css */
+.gift-accessory-details-container {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-accessory-details-container  p {
+    margin: 0;
+    font-size: 19px;
+}
+
+.gift-accessory-details-container p:first-child {
+    font-weight: bold;
+    font-size: 28px;
+    color: #8a3bc0; 
+    margin-bottom: 10px; 
+}
+
+.gift-accessory-details-container img {
+    max-width: 500px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.loading-error-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading-error-container p {
+    color: #dc3545;
+    font-size: 18px;
+}

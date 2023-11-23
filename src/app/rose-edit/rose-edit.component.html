@@ -1,0 +1,36 @@
+<!-- rose-edit.component.html -->
+<div *ngIf="rose; else loadingOrError">
+  <h2>Edit Rose</h2>
+  <br>
+  <form (ngSubmit)="updateRose()">
+    <label for="color">Color:</label>
+    <input type="text" id="color" [(ngModel)]="rose.color" name="color" required>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" [(ngModel)]="rose.price" name="price" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" [(ngModel)]="rose.quantity" name="quantity" required>
+
+    <label for="roseType">Rose Type:</label>
+    <input type="text" id="roseType" [(ngModel)]="rose.roseType" name="roseType" required>
+
+    <label for="rose_img_url">Rose Image URL:</label>
+    <input type="text" id="rose_img_url" [(ngModel)]="rose.rose_img_url" name="rose_img_url" required>
+
+    <button type="submit">Update Rose</button>
+  </form>
+</div>
+
+<ng-template #loadingOrError>
+  <div *ngIf="errorLoadingRose">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <div *ngIf="!rose && !errorLoadingRose">
+    <p>Loading...</p>
+  </div>
+</ng-template>
+
+<div *ngIf="updateSuccess" class="success-message">
+  Rose updated successfully!
+</div>

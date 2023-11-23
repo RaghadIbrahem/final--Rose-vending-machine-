@@ -1,0 +1,18 @@
+<div *ngIf="rose; else loadingOrError" class="rose-details-container">
+  <p>Gift Accessory</p>
+  <img *ngIf="rose?.rose_img_url" [src]="rose?.rose_img_url" alt="rose Image">
+  <p>GID: {{ rose?.id}}</p>
+  <p>Color: {{ rose?.color}}</p>
+  <p>Price: {{ rose?.price}}</p>
+  <p>Quantity: {{ rose?.quantity}}</p>
+  <p>Size: {{ rose?.size}}</p>
+  <p>Gift Accessory Type: {{ rose?.roseType}}</p>
+</div>
+<ng-template #loadingOrError>
+  <div *ngIf="errorLoadingRose">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <div *ngIf="!rose && !errorLoadingRose">
+    <p>Loading...</p>
+  </div>
+</ng-template>

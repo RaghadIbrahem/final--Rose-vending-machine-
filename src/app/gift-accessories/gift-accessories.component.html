@@ -1,0 +1,14 @@
+<!-- gift-accessories.component.html -->
+<div class="gift-accessories-container">
+  <div *ngFor="let giftAccessory of giftAccessories" class="gift-accessory-card">
+    <p>Gift Accessory</p>
+   <img *ngIf="giftAccessory?.gift_img_url" [src]="giftAccessory?.gift_img_url" alt="Gift Image">
+    <p>GID:{{ giftAccessory?.id}}</p>
+    <p>Color:{{ giftAccessory?.color}}</p>
+    <p>Price:{{ giftAccessory?.price}}</p>
+    <p>Quantity:{{ giftAccessory?.quantity}}</p>
+    <p>Size:{{ giftAccessory?.size}}</p>
+    <p>Gift Accessory Type:{{ giftAccessory?.giftAccessoryType}}</p>
+    <button (click)="addToCart(giftAccessory)">Add to Cart</button>
+  </div>
+</div>

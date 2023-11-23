@@ -1,0 +1,12 @@
+<div class="roses-container">
+  <div *ngFor="let rose of roses" class="rose-card">
+    <p>Rose</p>
+   <img *ngIf="rose?.rose_img_url" [src]="rose?.rose_img_url" alt="Rose Image">
+    <p>RID: {{rose?.id}}</p>
+    <p>Rose Color: {{rose?.color}}</p>
+    <p>Rose Price: {{rose?.price}}</p>
+    <p>Rose Quantity: {{rose?.quantity}}</p>
+    <p>Rose Type: {{rose?.roseType}}</p>
+    <button (click)="addToCart(rose)">Add to Cart</button>
+  </div>
+</div>

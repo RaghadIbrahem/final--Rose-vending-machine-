@@ -1,0 +1,31 @@
+
+ <!-- rose-create.component.html -->
+<div>
+  <h2>Create a New Rose</h2> 
+  <br>
+  <form (ngSubmit)="createRose()">
+    <label for="roseColor">Rose Color:</label>
+    <input type="text" id="roseColor" [(ngModel)]="rose.color" name="color" required>
+
+    <label for="rosePrice">Rose Price:</label>
+    <input type="number" id="rosePrice" [(ngModel)]="rose.price" name="price" required>
+
+    <label for="roseQuantity">Rose Quantity:</label>
+    <input type="number" id="roseQuantity" [(ngModel)]="rose.quantity" name="quantity" required>
+
+    <label for="roseType">Rose Type:</label>
+    <select id="roseType" [(ngModel)]="rose.roseType" name="roseType" required>
+      <option value="SUNFLOWER">Sunflower</option>
+      <option value="ROSE">Rose</option>
+      <option value="TULIP">Tulip</option>
+      <option value="LAVENDER">Lavender</option>
+      <option value="FLOWER">Flower</option>
+    </select>
+
+    <label for="roseImageUrl">Rose Image URL:</label>
+    <input type="text" id="roseImageUrl" [(ngModel)]="rose.rose_img_url" name="rose_img_url" required>
+
+    <button type="submit">Create Rose</button>
+  </form>
+  
+

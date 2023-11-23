@@ -1,0 +1,40 @@
+<!-- cart.component.html -->
+<div class="cart-container">
+  <div *ngIf="!checkingOut; else checkoutTemplate">
+    <h2>Your Shopping Cart</h2>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <div class="item-details">
+        <div class="item-info">
+          <img *ngIf="item?.img" [src]="item?.img" alt="Cart Item Image" class="item-image">
+          <p>
+            <span class="item-text">
+              Item ID:{{ item?.id }}<br>
+              Item Color: {{item?.color}}<br>
+              Item Price: {{ item.price | currency }}<br>
+              Quantity: 
+              <input type="number" [(ngModel)]="item.quantity" min="1" (change)="updateTotalAmount()" />
+            </span>
+          </p>
+          <button (click)="removeFromCart(item)">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="total-amount">
+      <p>Total Amount: {{ totalAmount | currency }}</p>
+      <button *ngIf="cartItems.length > 0" (click)="startCheckout()" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <ng-template #checkoutTemplate>
+    <div *ngIf="paymentSuccess; else paymentSection">
+      <img src="assets\thx.png">
+      <h2 class="payment-success">Thank You for using our website!</h2>
+    </div>
+    <ng-template #paymentSection>
+      <h2>Payment Section</h2>
+      <label for="paymentAmount">Enter Payment Amount:</label>
+      <input type="number" id="paymentAmount" [(ngModel)]="paymentAmount" min="0" required>
+      <button (click)="completeCheckout()" class="complete-payment-btn">Complete Payment</button>
+    </ng-template>
+  </ng-template>
+</div>

@@ -1,0 +1,24 @@
+<!-- rose-delete.component.html -->
+<div class="container">
+    <div class="header-box">
+      <h2>Delete Rose</h2>
+      <div class="roseDetails">
+        <div *ngIf="rose && !deleteSuccess"> 
+          <h3>Rose Details</h3>
+          <p>ID: {{ rose?.id }}</p>
+          <p>Color: {{ rose?.color }}</p>
+          <p>Price: {{ rose?.price }}</p>
+          <p>Quantity: {{ rose?.quantity }}</p>
+          <p>Rose Type: {{ rose?.roseType }}</p>
+          <div>
+            <p>Rose Image:</p>
+            <img *ngIf="rose?.rose_img_url" [src]="rose?.rose_img_url" alt="Rose Image">
+          </div>
+          <button class="delete-button" (click)="deleteRose()">Delete Rose</button>
+        </div>
+        <div *ngIf="deleteSuccess">
+          <p>Rose deleted successfully!</p>
+        </div>
+      </div>
+    </div>
+  </div>
