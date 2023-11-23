@@ -33,6 +33,9 @@
   <li>Jakarta Persistence (JPA)</li>
   <li>MySQL Database </li>
   <li>Spring Data JPA</li>
+  <li>Angular CLI</li>
+  <li>Postman</li>
+  <li>VS Code</li>
 </ul>
 
 <h2>Explore Our Blooms – Controllers and Routes</h2>
@@ -50,12 +53,12 @@
 <h3>Rose Controller</h3>
 
 <p>
-- <code>GET /api/roses/All-Roses</code>: Explore all our enchanting roses.<br>
-- <code>GET /api/roses/By-Rose-ID/{id}</code>: Get a rose by its unique ID.<br>
-- <code>GET /api/roses/By-Rose-Type/{type}</code>: Find roses by type – are you in the mood for a sunflower or a lavender-scented rose?<br>
-- <code>POST /api/roses/create-rose</code>: Plant the seeds of a new rose in our garden.<br>
-- <code>PUT /api/roses/update-rose/{id}</code>: Nurture an existing rose with updates.<br>
-- <code>DELETE /api/roses/Delete-Rose/{id}</code>: Remove a rose from our beautiful bouquet.<br>
+- <code>GET /All-roses</code>: Explore all our enchanting roses.<br>
+- <code>GET /By-Rose-ID/{id}</code>: Get a rose by its unique ID.<br>
+- <code>GET /By-Rose-Type/{type}</code>: Find roses by type – are you in the mood for a sunflower or a lavender-scented rose?<br>
+- <code>POST /create-rose</code>: Plant the seeds of a new rose in our garden.<br>
+- <code>PUT /update-rose/{id}</code>: Nurture an existing rose with updates.<br>
+- <code>DELETE /delete-rose/{id}</code>: Remove a rose from our beautiful bouquet.<br>
 </p>
 
 <h3>Gift Accessory Controller</h3>
