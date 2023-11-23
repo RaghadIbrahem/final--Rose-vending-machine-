@@ -1,27 +1,106 @@
-# RoseVendingMachine
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p align="center">
+  <img src="C:\Users\رغد الجهني\Downloads\Black White Floral Sketch Professional Organiser Logo.png", alt="Project Logo" width="900">
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+<h1>Rose Vending Project</h1>
+<p>This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10. </p>
+<h2>Overview</h2>
 
-## Development server
+<p>Welcome to Rose Vending project! I have developed a Java-based website to allow you to go through the experience of buying roses and gifts that allows you to browse the kinds of beautiful flowers and amazing and wonderful gifts you can see the product details and add it to your shopping cart. I wish you a wonderful and interesting experience at rose vending website.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2>Class Diagram</h2>
 
-## Code scaffolding
+<img src="https://github.com/RaghadIbrahem/Ironhack-Project1-Rose-vending-machine-/assets/146075144/8d31160c-b543-4fff-a035-a74fe182ca6f">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>Getting Started</h2>
 
-## Build
+<p>To get started with our project, follow these simple steps:</p>
+<ol>
+  <li>Clone this repository to your local machine.</li>
+  <li>Configure your development environment with Angular.</li>
+  <li>Build and run the project (ng serve) </li>
+</ol>
+<h2>Technologies We've Blossomed With</h2>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<ul>
+  <li>Java</li>
+  <li>Spring Boot</li>
+  <li>Jakarta Persistence (JPA)</li>
+  <li>MySQL Database </li>
+  <li>Spring Data JPA</li>
+</ul>
 
-## Running unit tests
+<h2>Explore Our Blooms – Controllers and Routes</h2>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h3>Product Controller</h3>
 
-## Running end-to-end tests
+<p>
+- <code>GET /api/products/All-Product</code>: Discover our entire product range.<br>
+- <code>GET /api/products/Product-By-ID/{id}</code>: Dig into a specific product.<br>
+- <code>POST /api/products/create-product</code>: Add a new product to our collection.<br>
+- <code>PUT /api/products/update-product/{id}</code>: Cultivate updates for existing products.<br>
+- <code>DELETE /api/products/Delete-product/{id}</code>: Prune a product from the selection.<br>
+</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<h3>Rose Controller</h3>
 
-## Further help
+<p>
+- <code>GET /api/roses/All-Roses</code>: Explore all our enchanting roses.<br>
+- <code>GET /api/roses/By-Rose-ID/{id}</code>: Get a rose by its unique ID.<br>
+- <code>GET /api/roses/By-Rose-Type/{type}</code>: Find roses by type – are you in the mood for a sunflower or a lavender-scented rose?<br>
+- <code>POST /api/roses/create-rose</code>: Plant the seeds of a new rose in our garden.<br>
+- <code>PUT /api/roses/update-rose/{id}</code>: Nurture an existing rose with updates.<br>
+- <code>DELETE /api/roses/Delete-Rose/{id}</code>: Remove a rose from our beautiful bouquet.<br>
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h3>Gift Accessory Controller</h3>
+
+<p>
+- <code>GET /GiftAccessoryById/{id}</code>: Find that perfect gift accessory by its ID.<br>
+- <code>GET /AllGiftAccessories</code>: Browse through our charming gift accessories.<br>
+- <code>GET /type/{type}</code>: Discover gift accessories by type.<br>
+- <code>POST /createGiftAccessory</code>: Add a delightful gift accessory to your collection.<br>
+- <code>PUT /updateGiftAccessory/{id}</code>: Customize a gift accessory with your own personal touch.<br>
+- <code>DELETE /deleteGiftAccessory/{id}</code>: Say goodbye to a gift accessory when you're ready to gift another.<br>
+</p>
+
+<h2>Extra Links</h2>
+
+<p>
+- [Presentation Slides](https://prezi.com/view/jyWtuInLZKlUXgTYnRRG/): Get an in-depth look at our project.<br>
+</p>
+
+<h2>The Future Work</h2>
+
+<p>
+- Make some improvements to interfaces.<br>
+- Allow the user to add their favorite products to the favorite list.<br>
+- Allow the user to choose the preferred language.<br>
+</p>
+
+<h2>Resources</h2>
+
+<p>Discover the libraries and frameworks that helped us bring this project to life:</p>
+
+- [Spring Boot](https://spring.io/projects/spring-boot): Spring Boot is the backbone of our application, providing a powerful framework for building Java applications.
+- [Jakarta Persistence (JPA)](https://jakarta.ee/specifications/persistence/2.2/): Jakarta Persistence (JPA) helps us manage relational data in our application.
+- [MySQL](https://www.mysql.com/): MySQL is our chosen relational database management system.
+- [Spring Data JPA](https://spring.io/projects/spring-data-jpa): Spring Data JPA simplifies data access for us.
+- [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10: it api that we make the frontend part.
+- [Postman](https://www.postman.com/): help as to connect the backend with frontend.
+- [VS Code](https://code.visualstudio.com/):Editor redefined and optimized for building and debugging modern web.
+
+
+<h2>The Mind Behind the Roses</h2>
+
+<p>
+- Project Lead: Raghad Aljohani<br>
+</p>
+
+</body>
+</html>
