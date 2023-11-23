@@ -4,7 +4,7 @@
 </head>
 <body>
 <p align="center">
-  <img src="C:\Users\رغد الجهني\Downloads\Black White Floral Sketch Professional Organiser Logo.png", alt="Project Logo" width="900">
+  <img src="logo.png" alt="Project Logo" width=300px>
 </p>
 
 <h1>Rose Vending Project</h1>
